@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Taking Two Input and perform Mathmetical Operations</h1>
+    <form onSubmit="return false">
+        <input id="input1" type="text">
+        <br>
+        <input id="input2" type="text">
+        <br>
+        <h1 id="result"></h1>
+        <button onclick="add()">Add</button>
+        <button onclick="subtract()">Subtract</button>
+        <button onclick="mul()">Multiply</button>
+        <button onclick="divide()">Divide</button>
+    </form>
+
+    <script src="apps.js"></script>
+    <script>
+        function add() {
+         let input1 = document.getElementById("input1").value;
+         let input2 = document.getElementById("input2").value;
+         let result = Number(input1)+Number(input2)
+         document.getElementById("result").innerHTML = result;
+        }
+
+        function subtract() {
+         let input1 = document.getElementById("input1").value;
+         let input2 = document.getElementById("input2").value;
+         let result = Number(input1)-Number(input2)
+         document.getElementById("result").innerHTML = result;
+        }
+
+        function mul() {
+         let input1 = document.getElementById("input1").value;
+         let input2 = document.getElementById("input2").value;
+         let result = Number(input1)*Number(input2)
+         document.getElementById("result").innerHTML = result;
+        }
+
+        function divide() {
+         let input1 = document.getElementById("input1").value;
+         let input2 = document.getElementById("input2").value;
+         let result = Number(input1)/Number(input2)
+         document.getElementById("result").innerHTML = result;
+        }
+    </script>
+</body>
+</html>
